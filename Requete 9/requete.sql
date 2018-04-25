@@ -1,0 +1,1 @@
+SELECT nom AS "nom genre", COUNT(titre) as "nombre films" , SUM(duree_min) AS "minutes totales" from film INNER JOIN genre on genre.id = film.genre_id WHERE genre_id >= 3 AND genre_id <= 5 GROUP BY genre_id;

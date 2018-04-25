@@ -1,0 +1,1 @@
+SELECT titre AS titre, date_debut_affiche as date_debut, distrib_id as distrib_id, nom AS nom_distrib FROM film INNER JOIN distrib ON film.distrib_id = distrib.id WHERE titre LIKE '%day%' ORDER BY date_debut_affiche;
